@@ -1,4 +1,7 @@
 function capitalizeString(stringInput) {
+    if (stringInput.length == 0) {
+        return "";
+    };
     let wordArray = stringInput.split(' ');
     let firstWord = wordArray.shift();
     firstWord = firstWord.split('');

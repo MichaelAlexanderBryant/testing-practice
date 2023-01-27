@@ -23,3 +23,7 @@ it('Return same string when first character is not a letter (Number)', () => {
 it('Return same string when first character is not a letter (Punctuation)', () => {
     expect(capitalizeString("!!!?- 82039482aAA b")).toMatch("!!!?- 82039482aAA b");
 });
+
+it('Return return nothing when nothing is received', () => {
+    expect(capitalizeString("")).toMatch("");
+});
